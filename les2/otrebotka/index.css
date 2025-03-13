@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(96, 96, 255);
+  font-size: 16px;
+}
+
+#setup {
+  font-size: 2rem;
+}
+
+#punchline {
+  font-size: 1.5rem;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+main #main_container {
+  max-height: 600px;
+  background-color: blue;
+  width: clamp(50%, 300px, 90%);
+  padding: 20px;
+}
+
+input[id=btn]:checked ~ #main_container {
+  background-color: red !important;
+}/*# sourceMappingURL=index.css.map */

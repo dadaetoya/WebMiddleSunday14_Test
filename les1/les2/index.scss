@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@mixin posElem($g){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $g;
+}
+form{
+    width: 60%;
+    height: 15vh;
+    margin:10px auto;
+    @include posElem(30px);
+    background-color: rgba(183, 183, 255, 0.503);
+    padding: 30px;
+    border-radius: 10px;
+    input{
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        text-indent: 10px;
+    }
+    #btn{
+        padding: 10px;
+        background: blue;
+        color: white;
+        font-weight: 800;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        &:hover{
+            background: white;
+            color:blue ;
+            transform: scale(1.05);
+        }
+    }
+}
+#cards{
+    @include posElem(40px);
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 90%;
+    min-height: 60vh;
+    background-color: rgba(183, 183, 255, 0.503);
+    margin: auto;
+    
+    &:not(div) {
+        
+    }
+}
+.order{
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 10px;
+}
+#load{
+    display: none;
+}
+.card{
+    text-decoration: none;
+    color: black;
+}
+
+.pagination{
+    .ul_pagination{
+        list-style-type: none;
+        @include posElem(30px);
+        .li_pagination{
+            width: 40px;
+            height: 40px;
+            background: blue;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 5px;
+            font-weight: 900;
+            &:hover{
+                background: rgb(112, 112, 255);  
+            }
+        }
+    }
+}

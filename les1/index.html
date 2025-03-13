@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <img class="lantern" src="./assets/img/lantern.svg" alt="">
+    <img class="lantern" src="./assets/img/lantern.svg" alt="">
+        <header>
+        <h1>China town</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="house">
+                <img class="roof" src="./assets/img/roof.svg" alt="">
+                <div class="room">
+                    <section class="title">
+                            <h3>
+                                chef
+                            </h3>
+                    </section>
+                    <section class="img">
+                            <img src="./assets/img/chef.jpg" alt="">
+                    </section>
+                </div>
+            </div>
+            <div class="house">
+                <img class="roof" src="./assets/img/roof.svg" alt="">
+                <div class="room"></div>
+            </div>
+        </div>
+        <div class="container1">
+            <h3>order</h3>
+            <form>
+                <label for="Dish">Dish:</label>
+                <input id="Dish" type="text" placeholder="fried rice">
+                <label for="Time">Time:</label>
+                <input id="Time" type="datetime">
+                <label for="Adress">Adress:</label>
+                <input id="Adress" type="text" placeholder="Umanskaya 54">
+                <label for="Telephone">Telephone:</label>
+                <input id="Telephone" type="tel" placeholder="+375(29)9379992">
+                <input id="btn" type="button" value="Order">
+            </form>
+        </div>
+        <div id="list">
+            <section class="columns">  
+                <div class="colDish">Dish</div>
+                <div class="colTime">Time</div>
+                <div class="colAdress">Adress</div>
+                <div class="colPhone">Phone</div>
+            </section>
+        </div>
+       
+    </main>
+    <div class="test">
+        <div class="container_test"></div>
+    </div>
+    <div class="test1">
+        <div class="container_test"></div>
+    </div>
+    <!-- <footer></footer> -->
+
+    <script type="module" src="./index.js" defer></script>
+</body>
+<style>
+
+    .test{
+        min-height: 500px;
+        width: 100%;
+    }
+    .test1{
+        height: 500px;
+        width: 100%;
+    }
+    .container_test{
+        height: 600px;
+    }
+</style>
+</html>
